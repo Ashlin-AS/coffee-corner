@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                echo 'Checking out Coffee Corner website...'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Building Coffee Corner website...'
+                bat 'dir'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing website files...'
+                bat 'if not exist index.html exit /b 1'
+                bat 'if not exist style.css exit /b 1'
+                bat 'if not exist script.js exit /b 1'
+            }
+        }
+
+        stage('Success') {
+            steps {
+                echo 'Coffee Corner website build successful!'
+            }
+        }
+    }
+}
