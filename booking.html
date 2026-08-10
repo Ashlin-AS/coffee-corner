@@ -1,0 +1,154 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Coffee Corner - Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        ☕ Coffee Corner
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="menu.html">Menu</a>
+
+        <a href="booking.html">Booking</a>
+
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<section class="booking">
+
+
+    <div class="booking-image">
+
+        <img src="images/coffee-shop.jpg"
+             alt="Coffee Corner">
+
+    </div>
+
+
+    <div class="booking-form">
+
+        <h2>Book Your Table</h2>
+
+        <p>
+            Reserve your table at Coffee Corner.
+        </p>
+
+
+        <form id="bookingForm">
+
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Customer Name"
+                required>
+
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required>
+
+
+            <label for="bookingDate">
+                Booking Date
+            </label>
+
+            <input
+                type="date"
+                id="bookingDate"
+                required>
+
+
+            <label for="bookingTime">
+                Booking Time
+            </label>
+
+            <input
+                type="time"
+                id="bookingTime"
+                required>
+
+
+            <input
+                type="number"
+                id="numberOfPeople"
+                placeholder="Number of People"
+                min="1"
+                required>
+
+
+            <textarea
+                id="specialRequest"
+                placeholder="Special Request"></textarea>
+
+
+            <button type="submit">
+                Book Now
+            </button>
+
+
+        </form>
+
+
+        <p id="bookingMessage"></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>☕ Coffee Corner</h3>
+
+    <p>
+        Fresh Coffee • Delicious Snacks • Happy Moments
+    </p>
+
+    <p>
+        © 2026 Coffee Corner. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```

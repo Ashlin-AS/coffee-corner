@@ -1,0 +1,8 @@
+coffeecorner\controller\TestController.class
+com\coffeecorner\controller\BookingController.class
+com\coffeecorner\model\Contact.class
+com\coffeecorner\controller\MenuController.class
+com\coffeecorner\controller\ContactController.class
+com\coffeecorner\model\Booking.class
+com\coffeecorner\CoffeeCornerApplication.class
+com\coffeecorner\model\Menu.class

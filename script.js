@@ -1,57 +1,40 @@
-// CHANGE PAGE
 
-function showPage(pageName) {
+document
+    .getElementById("bookingForm")
+    .addEventListener("submit", function(event) {
 
-    let pages = document.querySelectorAll(".page");
+        event.preventDefault();
 
-    pages.forEach(function(page) {
+        const customerName =
+            document.getElementById("customerName").value;
 
-        page.classList.remove("active");
+        const bookingDate =
+            document.getElementById("bookingDate").value;
 
-    });
+        const bookingTime =
+            document.getElementById("bookingTime").value;
 
-    document
-        .getElementById(pageName)
-        .classList.add("active");
+        const numberOfPeople =
+            document.getElementById("numberOfPeople").value;
 
-    window.scrollTo(0, 0);
-}
-
-
-// ORDER COFFEE
-
-function orderCoffee(item) {
-
-    alert(
-        "☕ " +
-        item +
-        " has been added to your order!"
-    );
-
-}
+        const bookingMessage =
+            document.getElementById("bookingMessage");
 
 
-// CONTACT FORM
+        bookingMessage.textContent =
+            "✅ Thank you, " +
+            customerName +
+            "! Your table for " +
+            numberOfPeople +
+            " people has been booked for " +
+            bookingDate +
+            " at " +
+            bookingTime +
+            ".";
 
-function sendMessage(event) {
 
-    event.preventDefault();
+        document
+            .getElementById("bookingForm")
+            .reset();
 
-    let name =
-        document.getElementById("name").value;
-
-    alert(
-        "Thank you, " +
-        name +
-        "! Your message has been sent successfully."
-    );
-
-    document.getElementById("name").value = "";
-
-    document.getElementById("email").value = "";
-
-    document.getElementById("phone").value = "";
-
-    document.getElementById("message").value = "";
-
-}
+});

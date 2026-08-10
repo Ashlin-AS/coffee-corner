@@ -1,285 +1,104 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Coffee Corner</title>
+    <title>Coffee Corner - Home</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<header>
 
-    <header>
+    <div class="logo">
+        ☕ Coffee Corner
+    </div>
 
-        <h1>☕ Coffee Corner</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-        <nav>
+</header>
 
-            <a onclick="showPage('home')">Home</a>
 
-            <a onclick="showPage('menu')">Menu</a>
+<section class="hero">
 
-            <a onclick="showPage('about')">About</a>
+    <div class="hero-content">
 
-            <a onclick="showPage('contact')">Contact</a>
-
-        </nav>
-
-    </header>
-
-
-    <!-- HOME -->
-
-    <section id="home" class="page active">
-
-        <div class="home-content">
-
-            <h2>Welcome to Coffee Corner</h2>
-
-            <p>
-                Fresh coffee, delicious snacks
-                and a relaxing atmosphere.
-            </p>
-
-            <button onclick="showPage('menu')">
-                Explore Menu
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- MENU -->
-
-    <section id="menu" class="page">
-
-        <h2 class="title">☕ Our Menu</h2>
-
-        <div class="menu-container">
-
-
-            <div class="card">
-
-                <img src="images/cappuccino.jpg"
-                     alt="Cappuccino">
-
-                <h3>Cappuccino</h3>
-
-                <p>Rich coffee with creamy milk foam.</p>
-
-                <h4>₹120</h4>
-
-                <button onclick="orderCoffee('Cappuccino')">
-                    Order Now
-                </button>
-
-            </div>
-
-
-            <div class="card">
-
-                <img src="images/espresso.jpg"
-                     alt="Espresso">
-
-                <h3>Espresso</h3>
-
-                <p>Strong and delicious classic coffee.</p>
-
-                <h4>₹100</h4>
-
-                <button onclick="orderCoffee('Espresso')">
-                    Order Now
-                </button>
-
-            </div>
-
-
-            <div class="card">
-
-                <img src="images/cold-coffee.jpg"
-                     alt="Cold Coffee">
-
-                <h3>Cold Coffee</h3>
-
-                <p>Refreshing chilled coffee.</p>
-
-                <h4>₹140</h4>
-
-                <button onclick="orderCoffee('Cold Coffee')">
-                    Order Now
-                </button>
-
-            </div>
-
-
-            <div class="card">
-
-                <img src="images/green-tea.jpg"
-                     alt="Green Tea">
-
-                <h3>Green Tea</h3>
-
-                <p>Healthy and refreshing green tea.</p>
-
-                <h4>₹90</h4>
-
-                <button onclick="orderCoffee('Green Tea')">
-                    Order Now
-                </button>
-
-            </div>
-
-
-            <div class="card">
-
-                <img src="images/croissant.jpg"
-                     alt="Croissant">
-
-                <h3>Croissant</h3>
-
-                <p>Fresh and crispy buttery croissant.</p>
-
-                <h4>₹80</h4>
-
-                <button onclick="orderCoffee('Croissant')">
-                    Order Now
-                </button>
-
-            </div>
-
-
-            <div class="card">
-
-                <img src="images/cake.jpg"
-                     alt="Chocolate Cake">
-
-                <h3>Chocolate Cake</h3>
-
-                <p>Soft and delicious chocolate cake.</p>
-
-                <h4>₹150</h4>
-
-                <button onclick="orderCoffee('Chocolate Cake')">
-                    Order Now
-                </button>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-
-    <section id="about" class="page">
-
-        <div class="about-container">
-
-            <img src="images/coffee-shop.jpg"
-                 alt="Coffee Shop">
-
-            <div class="about-text">
-
-                <h2>About Coffee Corner</h2>
-
-                <p>
-                    Coffee Corner is a friendly coffee shop
-                    created for coffee lovers.
-                </p>
-
-                <p>
-                    We serve freshly prepared coffee,
-                    tasty snacks and delicious desserts.
-                </p>
-
-                <p>
-                    Our goal is to provide high-quality
-                    coffee with friendly service.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="page">
-
-        <h2 class="title">📞 Contact Us</h2>
-
-        <div class="contact-container">
-
-            <img src="images/coffee-shop.jpg"
-                 alt="Coffee Shop">
-
-            <form onsubmit="sendMessage(event)">
-
-                <input
-                    type="text"
-                    id="name"
-                    placeholder="Enter your name"
-                    required
-                >
-
-                <input
-                    type="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                >
-
-                <input
-                    type="tel"
-                    id="phone"
-                    placeholder="Enter your phone number"
-                    required
-                >
-
-                <textarea
-                    id="message"
-                    placeholder="Enter your message"
-                    required
-                ></textarea>
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer>
+        <h1>Welcome to Coffee Corner</h1>
 
         <p>
-            © 2026 Coffee Corner |
-            All Rights Reserved ☕
+            Fresh Coffee • Delicious Snacks •
+            Beautiful Moments
         </p>
 
-    </footer>
+        <a href="menu.html" class="btn">
+            Explore Our Menu
+        </a>
+
+    </div>
+
+</section>
 
 
-    <script src="script.js"></script>
+<section class="about">
+
+    <div class="about-image">
+
+        <img src="images/coffee-shop.jpg"
+             alt="Coffee Shop">
+
+    </div>
+
+
+    <div class="about-content">
+
+        <h2>About Coffee Corner</h2>
+
+        <p>
+            Welcome to Coffee Corner, your perfect place
+            to enjoy freshly brewed coffee, delicious snacks
+            and tasty desserts.
+        </p>
+
+        <p>
+            Whether you want to relax with friends,
+            have a quick coffee or enjoy a peaceful evening,
+            Coffee Corner is always ready to serve you.
+        </p>
+
+        <a href="booking.html" class="btn">
+            Book Your Table
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>☕ Coffee Corner</h3>
+
+    <p>
+        Fresh Coffee • Delicious Snacks • Happy Moments
+    </p>
+
+    <p>
+        © 2026 Coffee Corner. All Rights Reserved.
+    </p>
+
+</footer>
 
 </body>
 
 </html>
+```
